@@ -23,7 +23,7 @@ class GAN():
         self.img_shape = (self.img_rows, self.img_cols, self.channels)
         self.latent_dim = 100
 
-        optimizer = Adam(0.0001, 0.5)
+        optimizer = Adam(0.0003, 0.5)
 
         # Build and compile the discriminator
         self.discriminator = self.build_discriminator()
